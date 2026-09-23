@@ -1,0 +1,110 @@
+📋 Your Antigravity Prompt
+
+Copy everything below the line and paste it into Antigravity:
+
+Build me a Telegram bot in Python that does the following three things:
+
+1. Instagram Video Downloader
+When I send any Instagram post or reel URL (e.g. https://www.instagram.com/reel/... or https://www.instagram.com/p/...), the bot should:
+
+Detect that it's an Instagram link
+Download the video using yt-dlp
+Convert/save it as .mp4 using ffmpeg if needed
+Send the .mp4 file back to me in the same Telegram chat
+If the file is larger than 50MB (Telegram's bot limit), compress it with ffmpeg before sending
+Clean up the downloaded file after sending
+
+2. Pinterest Image Downloader
+When I send any Pinterest image URL (e.g. https://www.pinterest.com/pin/...), the bot should:
+
+Detect that it's a Pinterest link
+Scrape and extract the highest-resolution version of the image (not the thumbnail) using requests + BeautifulSoup or yt-dlp
+Send the full-resolution image back to me as a photo in Telegram
+Clean up the downloaded file after sending
+
+3. Spotify Music Downloader
+When I send just the name of a song or artist + song (e.g. Coldplay Yellow or The Weeknd Blinding Lights), the bot should:
+
+Detect that it is NOT a URL (so it's a music search query)
+Search for the track on YouTube Music using yt-dlp with the query format ytsearch1: <song name>
+Download the best audio stream
+Convert it to .mp3 at 320kbps using ffmpeg
+Send the .mp3 file back to me in Telegram
+Tag the file with the song title as the filename
+Clean up after sending
+
+General requirements:
+
+Use Python with the python-telegram-bot library (v20+ async version)
+Use yt-dlp for all downloads (keep it updated)
+Use ffmpeg for any conversion
+Store the Telegram Bot Token in a .env file using python-dotenv, with the variable name BOT_TOKEN
+Handle errors gracefully — if a download fails, send me a friendly error message
+Send a "⏳ Downloading..." message first so I know the bot is working
+Add a /start command that explains how to use the bot
+Add a /help command listing all three features
+Include a requirements.txt with all dependencies
+Include a README.md explaining how to set up and run the bot, including how to install ffmpeg and yt-dlp
+
+Create the project in a folder called media-downloader-bot. Make sure the bot runs with python bot.py.
+
+After pasting that, if Antigravity asks you to confirm or approve any steps, just approve them. When it's done, you'll need to:
+
+Get a Bot Token from @BotFather on Telegram (/newbot)
+Put it in the .env file as BOT_TOKEN=your_token_here
+Run pip install -r requirements.txt
+Run python bot.py
+
+That's it — your bot will be live! Let me know if you want me to adjust anything (e.g. add TikTok, YouTube, etc.).
+
+i need a prompt
+
+Here's your prompt — copy everything in the box:
+
+Build me a Telegram bot in Python that does the following three things:
+
+1. INSTAGRAM VIDEO DOWNLOADER
+When I send any Instagram post or reel URL (e.g. https://www.instagram.com/reel/... or https://www.instagram.com/p/...), the bot should:
+- Detect that it is an Instagram link
+- Download the video using yt-dlp
+- Save or convert it to .mp4 using ffmpeg if needed
+- Send the .mp4 file back to me in Telegram
+- If the file is over 50MB, compress it with ffmpeg before sending
+- Delete the file after sending
+
+2. PINTEREST IMAGE DOWNLOADER
+When I send any Pinterest image URL (e.g. https://www.pinterest.com/pin/...), the bot should:
+- Detect that it is a Pinterest link
+- Extract the highest resolution version of the image using yt-dlp or requests + BeautifulSoup
+- Send the full resolution image back to me in Telegram
+- Delete the file after sending
+
+3. SPOTIFY MUSIC SEARCH AND DOWNLOAD
+When I send just a song name (e.g. "Coldplay Yellow" or "The Weeknd Blinding Lights") with no URL, the bot should:
+- Detect that it is NOT a URL, so treat it as a music search
+- Search YouTube Music using yt-dlp with the query format: ytsearch1: <song name>
+- Download the best audio stream
+- Convert it to .mp3 at 320kbps using ffmpeg
+- Send the .mp3 file back to me in Telegram with the song title as the filename
+- Delete the file after sending
+
+GENERAL REQUIREMENTS:
+- Use Python with python-telegram-bot library version 20 or higher (async)
+- Use yt-dlp for all downloads
+- Use ffmpeg for all conversions
+- Store the bot token in a .env file using python-dotenv with the variable name BOT_TOKEN
+- Send a "⏳ Downloading..." message immediately so I know the bot is working
+- Handle all errors gracefully and send a friendly error message if something fails
+- Add a /start command that welcomes the user and explains how to use the bot
+- Add a /help command that lists all three features with examples
+- Include a requirements.txt with all dependencies
+- Include a README.md explaining how to install ffmpeg, install dependencies, add the bot token, and run the bot
+
+Create everything inside a folder called media-downloader-bot. The bot should run with: python bot.py
+
+That's the full prompt. Paste it into Antigravity and let it build everything. When it's done, the only things you need to do manually are:
+
+Go to @BotFather on Telegram → /newbot → copy your token
+Paste it into the .env file as BOT_TOKEN=paste_your_token_here
+Run pip install -r requirements.txt
+Run python bot.py
