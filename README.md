@@ -8,3 +8,34 @@ I will be uploading screenshots that i made throughout this course
 https://share.gemini.google/MeAy0MKl4qoL
 https://chat.deepseek.com/share/s57t6hvh1fhf9fatq4
 https://chat.deepseek.com/share/s57t6hvh1fhf9fatq4
+
+<img width="1248" height="1872" alt="image" src="https://github.com/user-attachments/assets/6fce6ecb-c57e-49e1-9ecd-3084662ccdd3" />
+https://www.perplexity.ai/search/48bb2595-58cc-4595-aab9-80a4b1d75a4c
+GitHub Description
+Layered 3D Human Anatomy Illustration
+
+A high-detail 3D educational illustration of the human body in an anatomical standing position. The image presents multiple body systems in a layered, semi-transparent format, allowing the viewer to see the relationship between the external body, muscles, skeleton, and internal organs.
+
+Visible anatomical structures include:
+
+Muscular system
+
+Skeletal system, including the skull, rib cage, spine, and pelvis
+
+Respiratory organs, including the lungs
+
+Circulatory organs, including the heart and major blood vessels
+
+Digestive organs, including the liver, stomach, and intestines
+
+Urinary organs, including the kidneys and bladder
+
+The design uses a clean medical-visualization style with a neutral background, making it suitable for anatomy education, health-learning platforms, medical presentations, educational websites, and interactive anatomy projects.
+
+Short Repository Description
+A 3D layered human anatomy illustration showing muscles, skeleton, internal organs, and major body systems for educational use.
+
+README Image Alt Text
+3D anatomical illustration of a standing human body with semi-transparent layers revealing muscles, skeleton, lungs, heart, liver, stomach, intestines, kidneys, bladder, spine, and major blood vessels.
+
+
